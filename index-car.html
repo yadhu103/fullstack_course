@@ -1,52 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Card Grid</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Card with Hover Effects</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="card-container">
-        <div class="card">
-            <div class="card-image">
-                <img src="https://source.unsplash.com/300x200/?nature,water" alt="Nature">
-            </div>
-            <div class="card-content">
-                <h3>Nature</h3>
-                <p class="hidden-text">Explore the beauty of nature.</p>
-            </div>
+  <button class="theme-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+  
+  <div class="container">
+    <!-- Card 1 -->
+    <div class="card">
+      <div class="card-background"></div>
+      <div class="card-image">
+        <img src="/api/placeholder/600/400" alt="Mountain landscape">
+      </div>
+      <div class="card-content">
+        <h3 class="card-title">Mountain Escape</h3>
+        <p class="card-subtitle">Explore the heights</p>
+        <div>
+          <span class="card-tag">Nature</span>
+          <span class="card-tag">Adventure</span>
         </div>
-
-        <div class="card">
-            <div class="card-image">
-                <img src="https://source.unsplash.com/300x200/?mountain,forest" alt="Mountains">
-            </div>
-            <div class="card-content">
-                <h3>Mountains</h3>
-                <p class="hidden-text">Feel the adventure of mountains.</p>
-            </div>
+        <p class="card-description">Immerse yourself in breathtaking mountain views and fresh air. Perfect for hiking enthusiasts and nature lovers seeking tranquility.</p>
+        <div class="card-footer">
+          <button class="card-button">Learn More</button>
         </div>
-
-        <div class="card">
-            <div class="card-image">
-                <img src="https://source.unsplash.com/300x200/?ocean,beach" alt="Ocean">
-            </div>
-            <div class="card-content">
-                <h3>Ocean</h3>
-                <p class="hidden-text">Experience the vast ocean.</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-image">
-                <img src="https://source.unsplash.com/300x200/?sunset,sky" alt="Sunset">
-            </div>
-            <div class="card-content">
-                <h3>Sunset</h3>
-                <p class="hidden-text">Enjoy breathtaking sunsets.</p>
-            </div>
-        </div>
+      </div>
     </div>
+    
+    <!-- Card 2 -->
+    <div class="card">
+      <div class="card-background"></div>
+      <div class="card-image">
+        <img src="/api/placeholder/600/400" alt="Ocean view">
+      </div>
+      <div class="card-content">
+        <h3 class="card-title">Ocean Retreat</h3>
+        <p class="card-subtitle">Discover the deep blue</p>
+        <div>
+          <span class="card-tag">Beach</span>
+          <span class="card-tag">Relaxation</span>
+        </div>
+        <p class="card-description">Experience the calming sound of waves and endless horizons. Perfect for those seeking relaxation and water activities.</p>
+        <div class="card-footer">
+          <button class="card-button">Learn More</button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Card 3 -->
+    <div class="card">
+      <div class="card-background"></div>
+      <div class="card-image">
+        <img src="/api/placeholder/600/400" alt="City skyline">
+      </div>
+      <div class="card-content">
+        <h3 class="card-title">Urban Explorer</h3>
+        <p class="card-subtitle">City adventures await</p>
+        <div>
+          <span class="card-tag">City</span>
+          <span class="card-tag">Culture</span>
+        </div>
+        <p class="card-description">Dive into the vibrant city life with cultural attractions, fine dining, and entertainment just steps away.</p>
+        <div class="card-footer">
+          <button class="card-button">Learn More</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+    }
+  </script>
 </body>
 </html>
